@@ -1,7 +1,7 @@
 CatchStream
 ===========
 
-This program records an Internet radio stream for a length of time 
+This Python script captures an Internet radio stream for a length of time 
 designated by the user. It uses mplayer to save the stream as a wav file. 
 At the end of the designated time, recording stops, the wav file is 
 converted to mp3 using the lame encoder, and the original wav is deleted.
