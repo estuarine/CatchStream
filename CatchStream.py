@@ -206,7 +206,7 @@ def grabStream(station, url, timePlanned, timeStarted):
 # experienced problems with Real and Windows Media streams.
 
 stations = { 'KCRW'   : 'http://media.kcrw.com/live/kcrwlive.pls', \
-             'WFMU'   : 'http://wfmu.org/wfmu.pls', \
+             'WFMU'   : 'http://stream0.wfmu.org/freeform-128k', \
              'WPRB'   : 'http://stardust.wavestreamer.com:2152/1', \
              'SomaFM' : 'http://somafm.com/indiepop130.pls' }
              
