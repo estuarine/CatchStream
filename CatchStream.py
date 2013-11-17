@@ -34,22 +34,22 @@ The time period (if the user provides one) must be in the format hh:mm:ss
 or the script will abort.
 
 If the station and period are not specified in the command line, the script 
-will default to recording KCRW for half an hour. So:
+will default to recording WFMU for half an hour. So:
 
 	python CatchStream.py
 
 is equivalent to:
 
-	python CatchStream.py KCRW 00:30:00
+	python CatchStream.py WFMU 00:30:00
 
 You can also specify the station but not the time period, in which case the 
 script will again default to half an hour:
 
-	python CatchStream.py WFMU
+	python CatchStream.py KCRW
 	
 is equivalent to:
 
-	python CatchStream.py WFMU 00:30:00
+	python CatchStream.py KCRW 00:30:00
 	
 
 
@@ -213,7 +213,7 @@ stations = { 'KCRW'   : 'http://media.kcrw.com/live/kcrwlive.pls', \
 try:
 	station = sys.argv[1]
 except:
-	station = "KCRW"
+	station = "WFMU"
 	
 try:
 	url = stations[station]
